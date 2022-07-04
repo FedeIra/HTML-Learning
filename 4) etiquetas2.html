@@ -18,23 +18,44 @@
     b) meterle mas todavia
     2. Seguir estudiando
     3. Aprender CSS
+    Lo que escribo aca entre p no respeta el formateo q le doy en el archivo, para eso tengo que usar la etiqueta pre
+    segun lo siguiente:
     <!-- te lo pone todo seguido-->
 
   <pre> <!-- el <pre> te respeta el formateo. Es preformateo. Te cambia tambien el tipo de tipografia-->
-      Aca si te respeta el formateo. ejemplo lista de compras:
+      Aca si te respeta el formateo (al usar la etiqueta pre). ejemplo lista de compras:
+
       1. Vegatales:
+
         a) tomate
         b) lechuga
         c) zanahoria
+
       2. Dulces:
+
         a) torta
         b) caramelos
+
+              Puedo poner todo en el orden que quiera y me lo va a respetar.
     </pre>
   </p>
 
+  <hr>
+
   <p>
+  <pre>
     <code>  Este texto esta en formato de codigo</code>
     <!-- misma tipografia de le etiqueta pre. Sirve para poner ejemplos de codigo-->
+    <code>
+      import React from "react";
+      import Title from "./Title";
+
+      function App {
+        return &lt;Title/&gt; <!-- al pegar esta funcio te respeta toda la indentacion. Reempplazo los </> con los caracteres especiales para escribir estos ya que si los pongo directamente, html te los toma como picoparentesis y te tira error. Los caracteres especiales siempre arrancan con un &-->
+      }
+
+    </code>
+  </pre>
   </p>
 </body>
 
