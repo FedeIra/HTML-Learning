@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etiquetas de Estructura</title>
+  <style>
+    h2 {
+      color: darkgray;
+    }
+  </style>
+  <!-- abrimos una etiqueta style. y dentro de esta etiqueta tambien podemos aplicar estilos. Los trato como objetos. Le aplico estilos a la etiqueta. Esto se ve mas en CSS. Esta es la segunda forma de aplicar style, otra es directamente cuando escribo. Sin embargo, la forma mas correcta de hacer eso es por medio de una hoja de estilos. -->
 </head>
 
 <body>
@@ -14,17 +20,22 @@
 
   <hr>
 
-  <h1> H1: SOLO PUEDE EXISTIR UNO</h1>
+  <h1 style="background-color:blueviolet"> H1: SOLO PUEDE EXISTIR UNO</h1>
 
-  <h2> Etiquetas Semanticas Estructurales</h2>
+  <!-- <span> Hola</span> -->
 
-  <div> DIV: Es una etiqueta contenedora que no tiene semantica. El problema es q si no teenes bien identado el codigo
-    te
-    confundis cuando abre una y cuando cierra otra. Por esto, luego nacen nuevas etiquetas:</div>
+  <h2 style="background-color:aquamarine"> Etiquetas Semanticas Estructurales</h2>
+
+  <div> DIV: Es una etiqueta contenedora que no tiene semantica. El problema es q si no teenes bien identado el
+    codigo
+    te confundis cuando abre una y cuando cierra otra. Antes de usar una div intentar usar otra etiqueta
+    especializada
+    para lo que quiera escribir. Por esto, luego nacen nuevas etiquetas:</div>
 
   <header> HEADER: Esta etiqueta nos representa la cabecera de un sitio o seccion </header>
 
-  <main> MAIN: nos va a definir la seccion principal del documento. Solo puede existir una etiqueta main por documento.
+  <main> MAIN: nos va a definir la seccion principal del documento. Solo puede existir una etiqueta main por
+    documento.
     Igual que el h1. Te dice "aca esta el contenido principal"
   </main>
 
@@ -32,17 +43,62 @@
     FOOTER: pie de pagina de un sitio web o de una seccion
   </footer>
 
-  <article> ARTICLE: es un articulo. representa una seccion autocontenido que por si sola se explica sin tener contexto
+  <article> ARTICLE: es un articulo. representa una seccion autocontenido que por si sola se explica sin tener
+    contexto
     de toda la interfaz del sitio. </article>
 
   <aside> ASIDE: representa contenido complementario o secundario. Tipica lista de "articulos relacionados". Tambien
     sirve para las zonas de publicadad de los sitios web.</aside>
 
-  <section> SECTION: representa una seccion de contenido generico. Se discute si un article tiene que ir dentro de un
+  <section> SECTION: representa una seccion de contenido generico. Se discute si un article tiene que ir dentro de
+    un
     section o viceversa, la verdad es q la semantica es subjetivo en base al tipo d contenido q definas en tu web.
     Podemos tener seccion que tenga su propio articulo con una seccion interna. No es a rajatabla. </section>
 
+  <nav> NAV: esta etiqueta es una para navegacion. Suelen tener links donde clickeas y te envian a otra web</nav>
+
   <address> ADDRESS: representa una direccion fisica.</address>
+
+  <hr>
+
+  <h2 style="background-color:chocolate"> Etiquetas de bloque vs. etiquetas de linea</h2>
+  <p style="background-color:blueviolet"> De todas las etiquetas de html hay un conjunto q trabaja en linea y hay otro
+    que trabaja en bloque.
+  </p>
+
+  <div> La etiqueta de bloque por excelencia es la DIV que no tiene semantica. Una etiqueta de bloque es aquellas
+    que
+    genera saltos de linea con sus etiquetas hermanas. Van a generar un enter o salto de linea tanto arriba como
+    abajo.
+    Una etiqueta de bloque usa todo el ancho disponible.
+  </div>
+
+  <div style="background-color: crimson;"> Desde html podemos aplicar estilos desde una etiqueta con el atributo
+    STYLE.
+    Una etiqueta de bloque usa todo el ancho disponible. Prueba de eso es que el color continua incluso luego de q
+    termina el texto hasta ocupar todo el largo o ancho. </div>
+
+  <span style="background-color:aqua"> La etiqueta de linea por excelencia es SPAN que no tiene semantica. Una
+    etiqueta de linea solo ocupa el espacio necesario que tiene su contenido. Prueba de esto es que el color azul
+    solo
+    ocupa el texto y no continua ocupando el ancho de todo el bloque.</span>
+
+  <span> Hola, soy otra SPAN. Como solo ocupa el espacio que pretende y no un bloque, esto puedo continuar sin
+    ocupar
+    un
+    espacio por si mismo.</span>
+
+  <h3 style="background-color:aqua; color: brown;">Los encabezados son una etiqueta de bloque ya que ocupan todo un
+    bloque</h3> <!-- se puede ponerle background de colores, etc por html, pero lo mejor es hacerlo por estilos -->
+
+  <hr>
+
+  <h2> Estilos CSS en HTML</h2>
+
+  <div> 3 formas que existen de aplicar texto de linea en cascada</div>
+
+
+
 
 </body>
 
