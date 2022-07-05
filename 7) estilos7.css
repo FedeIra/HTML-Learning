@@ -1,0 +1,12 @@
+body {
+  font-family: Cambria;
+}
+
+h1 {
+  color: blue;
+}
+
+img {
+  max-width: 100%; /* aca le digo q a todas las imagenes aplicarle maxima anchura del 100%. Aunque sean mas grandes el tamanio maximo es el de la pantalla. Con esto, no hace falta modificar el width y heigh en el mismo codigo html */
+  height: auto; /* para que no se deforme su altura, aca le digo que el valor de la altura se calcule proporcionalmente a su width*/
+}

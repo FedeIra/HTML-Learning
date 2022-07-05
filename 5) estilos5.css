@@ -1,0 +1,9 @@
+/* aca creo el estilo. Pero luego lo tengo q vincular al documento html. Es decir, hay que enlazarlo en el head. */
+
+body {
+  font-family: sans-serif;
+}
+/* aca le digo que aplique esta tipografia a todo el cuerpo del doc html */
+h1 {
+  color: rgb(0, 255, 119);
+} /*  aca le digo el color para los encabezados h1*/
