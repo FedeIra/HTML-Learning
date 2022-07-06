@@ -7,3 +7,8 @@ body {
 h1 {
   color: rgb(0, 255, 119);
 } /*  aca le digo el color para los encabezados h1*/
+
+/*  La siguiente parte la agrego para el punto 13), especificamente para enlace interno con efecto visual: */
+html {
+  scroll-behavior: smooth; /* esto hace q los enlaces internos no te lleven instantamente al enlace sino que algo mas lento mostrandote el recorrido, por eso "smooth" */
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlaces Internos</title>
+
+  <link rel="stylesheet" href="5) estilos5.css">
+</head>
+
+<body>
+  <!-- Aca vemos como generar enlaces o anclas internas. Sirven sobre todo para articulos extensos que quieras dividir en secciones -->
+
+  <h1>ENLACES INTERNOS</h1>
+
+  <div>Un enlace interno estamos en la misma url o documento. Cuando le das click aparece un simbolo numeral en el
+    buscador y luego aparece el texto q es el identificar de la seccion interna a la que tiene que ir. Para poner un
+    identificador hay que ponerle al titulo el atributo id. Ejemplo: </div>
+
+  <h2 id="temario">Temario</h2>
+  <!-- En emmet te tiran claves para escribir cosas. Por ejemplo: ul>li*3>a    Esto es lo equivalente a escribir una lista desordenada con 3 lineas y a cada una ponerle un enlace-->
+
+  <ul>
+    <li><a href="13) enlacesInternos.html#inicio"> Introduccion</a></li>
+    <!-- primero pongo el enlace de nuestra pagina web. Despues va hashtag # seguido del id del titulo. Evitar caracteres ajenos al ingles -->
+    <li><a href="13) enlacesInternos.html#historia">Historia</a></li>
+    <li><a href="13) enlacesInternos.html#bases">Bases</a></li>
+  </ul>
+
+  <h3 id="inicio"> Introduccion</h2>
+    <p>HTML es el lenguaje con el que se define el contenido de las páginas web. Básicamente se trata de un conjunto de
+      etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas,
+      vídeos, etc.</p>
+    <hr>
+    <a href="13) enlacesInternos.html#temario">⚔️</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3 id="historia">Historia</h3>
+    <p>El HTML se creó en un principio con objetivos divulgativos de información con texto y algunas imágenes. No se
+      pensó
+      que llegara a ser utilizado para crear área de ocio y consulta con carácter multimedia (lo que es actualmente la
+      web),
+      de modo que, el HTML se creó sin dar respuesta a todos los posibles usos que se le iba a dar y a todos los
+      colectivos
+      de gente que lo utilizarían en un futuro. Sin embargo, pese a esta deficiente planificación, si que se han ido
+      incorporando modificaciones con el tiempo, estos son los estándares del HTML. Numerosos estándares se han
+      presentado
+      ya. El HTML
+      4.01 es el último estándar a febrero de 2001. Actualización a mayo de 2005, en estos momentos está apunto de
+      presentarse
+      la versión 5 de HTML, de la que ya se tiene un borrador casi definitivo. </p>
+    <hr>
+    <a href="13) enlacesInternos.html#temario">⚔️</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- le agrego estos saltos de linea pq si te queda todo en una sola carilla no se puede ver bien el funcionamiento de los enlaces internos -->
+
+    <h3 id="bases"> Bases </h3>
+    <p>Por adelantar un poco cómo se utiliza el HTML os diremos que el lenguaje consta de etiquetas que tienen esta
+      forma
+      o. Cada etiqueta significa una cosa, por ejemplo significa que se escriba en negrita (bold) o significa un
+      párrafo, es un enlace, etc. Casi todas las etiquetas tienen su correspondiente etiqueta de cierre, que
+      indica que a partir de ese punto no debe de afectar la etiqueta. Por ejemplo se utiliza para indicar que
+      se deje de escribir en negrita. Así que el HTML no es más que una serie de etiquetas que se utilizan para definir
+      el
+      contenido del documento y algún estilo básico. Esto está en negrita.</p>
+
+    <hr>
+    <a href="13) enlacesInternos.html#temario">⚔️</a>
+    <!-- Aca le pongo otro enlace interno, pero en vez de palabras le pongo un emoticon. Luego lo pongo en el resto de los sectores del doc -->
+
+    <br><br><br><br>
+    <div> Ahora bien, los enlaces internos que pusimos hasta ahora se hacen de manera inmediata sin ningun efecto
+      visual. Esto se puede alterar por medio de CSS. Para eso me voy a la hoja de estilos, y le pongo: </div>
+    <pre>html {
+      scroll-behavior: smooth;
+      } </pre>
+
+</body>
+
+</html>
