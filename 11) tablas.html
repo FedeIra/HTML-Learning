@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+
+  <link rel="stylesheet" href="5) estilos5.css">
+</head>
+
+<body>
+  <!-- como hacer una tabla de datos en html -->
+  <h1> TABLAS</h1>
+
+  <div> La etiqueta para hacer tablas es table. Las tablas tienen filas (tr = table rov) y columnas (tc = table column).
+    Dentro de las tr tenemos las celdas (td): <br><br>
+  </div>
+
+  <table>
+    <tr>
+      <td> Nombre:</td>
+      <td> Constelacion:</td>
+      <td> Tipo de armadura:</td>
+    </tr>
+    <tr>
+      <td> Ikki</td>
+      <td>Fenix</td>
+      <td>Bronce</td>
+    </tr>
+    <tr>
+      <td>Shaina</td>
+      <td>Ofiuco</td>
+      <td>Plata</td>
+    </tr>
+    <tr>
+      <td>Saga</td>
+      <td>Geminis</td>
+      <td>Dorado</td>
+    </tr>
+  </table>
+
+  <br><br><br>
+  <div> Podemos crear grupos de filas. Haciendo tablas mas elaboradas:</div> <br>
+
+  <table>
+    <thead>
+      <tr>
+        <!-- primero con el tr creas la fila -->
+        <th>Nombre</th>
+        <th>Constelacion</th>
+        <th>Tipo de armadura</th>
+      </tr>
+    </thead>
+    <!-- para las celdas thead en lugar de etiqueta td es etiqueta th por table heading. En el foot tambien se usa th en lugar de td  -->
+    <tbody>
+      <tr>
+        <td>Nombre</td>
+        <td>Constelacion</td>
+        <td>Tipo de armadura</td>
+      </tr>
+      <tr>
+        <td> Ikki</td>
+        <td>Fenix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Shaina</td>
+        <td>Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Geminis</td>
+        <td>Dorado</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+  </table>
+
+  <br><br>
+
+  <div> Tambien se pueden combinar celdas: </div><br>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Tabla de los santos de Athena</th>
+      </tr>
+      <!-- creo esta linea pero solo con una celda con un solo titulo . Le tens que agregar atributo colspan para decirle cuantas columnas queres ocupar. Es como el wrap en excel. Le pongo 3 entonces para que ocupe las 3 columnas disponibles de esta tabla. Puedo hacer esto mismo con los rows como en el ejemplo siguiente en Ikki -->
+      <tr>
+        <th>Nombre</th>
+        <th>Constelacion</th>
+        <th>Tipo de armadura</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--     <tr>
+        <td>Nombre</td>
+        <td>Constelacion</td>
+        <td>Tipo de armadura</td>
+      </tr> -->
+      <!-- lo elimino para q en el cuerpo vengan solo los datos de los caballeros y no se repita esta linea -->
+      <tr>
+        <td rowspan="2"> Ikki</td>
+        <!-- le agregue rowspan q es lo mismo q el merge de excel. Ahora ocupa 2 rows y desplazo a uno -->
+        <td>Fenix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Mistry</td>
+        <td>Lagarto</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Geminis</td>
+        <td>Dorado</td>
+      </tr>
+      <tr>
+        <td>Shaina</td>
+        <td rowspan="2">Ofiuco</td>
+        <!-- aca le digo que la palabra ofiuco ocupe dos filas. Asi no la tengo q repetir como dije abajo. El tema es q te corre las celdas tambien. Por eso quito el ofiuco de abajo -->
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Odiseo</td>
+        <!--      <td>Ofiuco</td> -->
+        <!-- lo saco para q no se repita y asi se desplace y desarme la tabla -->
+        <!--  en el cuadro se repite la palabra ofiuco en las ultiams dos filas de la columna dos para eso le puedo decir a la primer celda de ofiuco el rowspan-->
+        <td>Dorado</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="3"> <small>Saint Seiya fue creado por Masami Kurumada</small></th>
+        <!-- le agrego un footer como nota al pie. Y le agrego el small para hacerlo mas pequenio -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

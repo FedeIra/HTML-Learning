@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas</title>
+</head>
+
+<body>
+  <h2> LISTAS</h2>
+
+  <hr>
+
+  <div> Generalmente se usa las listas ordenadas y desordenadas, pero existe una tercera.</div>
+
+  <h3> 1) Listas ordenadas: La etiqueta es ol de ordered list. Ahi dentro cada elementos tiene que ir con una etiqueta
+    de li, por list order</h3>
+
+  <ol>
+    <li> Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+
+  <div> Puedo crear una lista y decirle en que numero empezar con la caracteristica start:</div>
+
+  <ol start="2">
+    <li> Dos</li>
+    <li> Tres</li>
+    <li> Cuatro</li>
+  </ol>
+
+  <div> Puedo hacerla en el orden inverso con el atributo reversed. Es un valor booleano, por lo que aunqe necesita ser
+    true, por el hecho de estar significa q es true, le podria poner false y entonces no seria reversed:</div>
+
+  <ol reversed>
+    <li> Tres</li>
+    <li> Dos</li>
+    <li> Uno</li>
+  </ol>
+
+  <div>Nos permite cambiar de numeros a letras, enumeracion romana y otros con el atributo type:</div>
+
+  <ol type="i">
+    <li> jamon</li>
+    <li> huevo</li>
+    <li> mayonea</li>
+  </ol>
+
+  <hr>
+
+  <h2> Listas desordenadas: Es cuando hacemos listas con viñetas o bullets. La etiqueta es ul por unordered list </h2>
+
+  <ul>
+    <!-- esta enumeracion es disc (type = "disc") por defecto -->
+    <li>lavar</li>
+    <li> ordenar</li>
+    <li> arreglar el estante</li>
+  </ul>
+
+  <div> Aca tambien se puede usar el atributo type para cambiarle la enumeracion:</div>
+
+  <ul type="circle">
+    <li> jugar</li>
+    <li> dormir</li>
+    <li> descansar</li>
+  </ul>
+
+  <ul type="square">
+    <li> jugar</li>
+    <li> dormir</li>
+    <li> descansar</li>
+  </ul>
+
+  <hr>
+
+  <h2> Listas por definicion: no son muy utilizadas, sirven para cosas puntuales como glosario de terminos. Se forman
+    con la etiqueta dl de definition list. Dentro de la lista esta el dt, q seria el termino y luego el dd que seria la
+    definicion:</h2>
+
+  <dl>
+    <dt> HTML</dt>
+    <dd>Es un lenguaje de marcado q define el contenido de la web</dd>
+    <dt> CSS</dt>
+    <dd> Es un lenguaje de definicion que da estilos al codigo html</dd>
+    <dt> JavaScript</dt>
+    <dd> Es el lenguaje de la web</dd>
+  </dl>
+
+  <!--   queda una pequenia identacion primero con el termino y luego, indentada, la definicion. -->
+
+</body>
+
+</html>
