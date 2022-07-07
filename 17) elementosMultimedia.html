@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos Multimedia</title>
+
+  <link rel="stylesheet" href="5) estilos5.css">
+</head>
+
+<body>
+  <h1 id="inicio">ELEMENTOS MULTIMEDIA</h1>
+
+  <div><b>Audios y videos:</b> Desde la llegada de html5 tenemos soporte de esto. Para esto tengo q agregar un archivo
+    multimedia de audio y video. Los mas populares son mp3 y mp4. Lo mejor es q por cada estilo de archivo o funcion de
+    archivo tengas una carpeta. Creamos entonces la carpeta media:</div>
+  <audio src="media\amb_bigfoot_backing_part_03_07.mp3" controls> </audio> <br>
+  <!-- el disenio del reproductor de audio varia segun el navegador -->
+
+  <div>Le podemos agregar atributos al audio. Ejemplo el autoplay que hace que se ponga por default el audio. La
+    propiedad autoplay no funciona en cualquier navegador. Tampoco en dispositivos pq te tienen que preguntar antes
+    de reproducir. Mejor no ponerlo (esta en bloque comentado por molesto):</div>
+  <!--  <audio src="media\amb_bigfoot_backing_part_03_07.mp3" controls autoplay> </audio><br> --> <br><br>
+
+
+  <p>La propiedad loop es q se reproduce automaticamente al terminar. Son atributos boolean q de por si son true al
+    estar escritos:</p>
+  <audio src="media\amb_bigfoot_backing_part_03_07.mp3" controls loop> </audio><br>
+
+  <p>La propiedad moot es que empieza muteado el audio:</p>
+  <audio src="media\amb_bigfoot_backing_part_03_07.mp3" controls muted> </audio><br>
+
+  <p>Otro atributo muy recomendado es el preload. Desde el momento q esta cargando la pagina aunq el usuario no le ponga
+    play va a empezar a precargar el track de audio en el prenavegador asi lo puede reproducir apenas se abre. Sirve
+    tambien para la etiqueta video:</p>
+  <audio src="media\amb_bigfoot_backing_part_03_07.mp3" controls preload> </audio><br><br>
+
+  <hr>
+
+  <div>La etiqueta <b>video</b> es muy similar a la del audio. Tiene las mismas caracteristicas, mute, loop, autoplay,
+    controls. Adicionalmente tiene una etiqueta poster q es la miniatura del video q es la caratula q se muestra antes q
+    el video comience a reproducirse:</div> <br>
+
+  <video src="media\video.mp4" controls preload></video> <br><br>
+
+  <div> Le puedo agregar el atributo poster para q aparezca con la imagen q elijas. Puede achicarse el video conforme la
+    imagen. La recomendacion es poner una imagen de tamanio similar al video. Al igual q imagenes, los audios y videos
+    son elementos de linea, no de bloque. Tambien se le puede modificar el ancho y alto pero lo sugerible es hacer estas
+    modificaciones a traves de CSS :</div>
+
+  <video src="media\video.mp4" controls preload poster="media\old-man-svgrepo-com.svg"></video> <br>
+
+  <br><br><br><br><br>
+  <hr>
+  <button><a href="18) elementosMultimedia.html#inicio"> INICIO</a></button>
+</body>
+
+</html>
